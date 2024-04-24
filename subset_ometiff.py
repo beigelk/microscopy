@@ -22,7 +22,7 @@ def subsetczi_writeometiff(filepath, range_start, range_end):
     print("IMAAGE LOADED -- " + str(datetime.now()))
     
     # Initialize a new numpy array
-    new_nd_array = np.ndarray(shape=(1, 2, z_dim, img.dims.Y, img.dims.X))
+    new_nd_array = np.ndarray(shape=(1, 2, z_dim, img.dims.Y, img.dims.X), dtype='uint8')
     
     print("NEW ARRAY INITIALIZED -- " + str(datetime.now()))
 
